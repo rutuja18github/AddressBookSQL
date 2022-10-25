@@ -29,3 +29,8 @@ insert into addressbook (first_name,last_name,address,city,state,zip,phone_numbe
  ('jenny','Potter','XYZ','LA','California',456123,641356,'jenny@gmail.com');
 
 select * from addressbook;
+
+ update addressbook
+ set address='FC Road'
+ where first_name='Shiv';
+ 
