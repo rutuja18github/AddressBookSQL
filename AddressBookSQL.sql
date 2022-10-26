@@ -43,4 +43,7 @@ values ('Shubhangi','Patil','Wayle Nagar','Mumbai','Maharashtra',444002,45463213
 ('Annabelle','Wallise','pqr','Albany','New York',789456,654561,'annabelle@gmail.com');
 
 select * from addressbook where state='Maharashtra';
+
 select * from addressbook where city='Mumbai';
+
+select Count(*) from addressbook where city='Nashik' and state='Maharashtra';
