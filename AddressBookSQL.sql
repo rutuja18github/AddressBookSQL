@@ -30,7 +30,10 @@ insert into addressbook (first_name,last_name,address,city,state,zip,phone_numbe
 
 select * from addressbook;
 
- update addressbook
- set address='FC Road'
- where first_name='Shiv';
+update addressbook
+set address='FC Road'
+where first_name='Shiv';
+ 
+delete from addressbook where first_name='Shiv';
+select * from addressbook;
  
