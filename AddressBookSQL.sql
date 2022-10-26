@@ -24,9 +24,9 @@ show tables;
 describe addressbook;
 
 insert into addressbook (first_name,last_name,address,city,state,zip,phone_number,email)
- values ('Rutuja','Patil','Shivshakti colony','Vadodara','Gujarat',424002,9475816,'rutu@gmail.com'),
- ('Shiv','Shinde','Shivaji Nagar','Pune','Maharashtra',451006,8844556,'shiv@gmail.com'),
- ('jenny','Potter','XYZ','LA','California',456123,641356,'jenny@gmail.com');
+values ('Rutuja','Patil','Shivshakti colony','Vadodara','Gujarat',424002,9475816,'rutu@gmail.com'),
+('Shiv','Shinde','Shivaji Nagar','Pune','Maharashtra',451006,8844556,'shiv@gmail.com'),
+('jenny','Potter','XYZ','LA','California',456123,641356,'jenny@gmail.com');
 
 select * from addressbook;
 
@@ -36,4 +36,11 @@ where first_name='Shiv';
  
 delete from addressbook where first_name='Shiv';
 select * from addressbook;
- 
+
+insert into addressbook (first_name,last_name,address,city,state,zip,phone_number,email)
+values ('Shubhangi','Patil','Wayle Nagar','Mumbai','Maharashtra',444002,45463213,'shubhangi@gmail.com'),
+('Suraj','Nikam','Shaalimar Nagar','Nashik','Maharashtra',651006,2314899,'suraj@gmail.com'),
+('Annabelle','Wallise','pqr','Albany','New York',789456,654561,'annabelle@gmail.com');
+
+select * from addressbook where state='Maharashtra';
+select * from addressbook where city='Mumbai';
