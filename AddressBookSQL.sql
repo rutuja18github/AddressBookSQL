@@ -59,3 +59,6 @@ alter table addressbook add type varchar(150) after last_name;
 
 describe addressbook;
 
+update addressbook set type='profession' where first_name='jenny' or first_name='Rutuja';
+
+select count(type) as Count,type from addressbook group by type;
