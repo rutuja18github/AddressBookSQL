@@ -57,8 +57,21 @@ select * from addressbook where city='Nashik' order by first_name;
 
 alter table addressbook add type varchar(150) after last_name;
 
+alter table addressbook add addressBook_name varchar(15) after type;
+
 describe addressbook;
 
-update addressbook set type='profession' where first_name='jenny' or first_name='Rutuja';
+update addressbook set type='profession' , addressBook_name='Addressbook1' where first_name='jenny' or first_name='Rutuja';
+
+update addressbook set type='friends' , addressBook_name='Addressbook2' where first_name='Annabelle';
+ 
+update addressbook set type='family' , addressBook_name='Addressbook3' where first_name='Abhishek';
+
+update addressbook set addressBook_name='Addressbook2' where first_name='Suraj';
 
 select count(type) as Count,type from addressbook group by type;
+
+select count(*) from addressbook where type="family";
+
+select * from addressbook;
+
